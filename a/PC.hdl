@@ -16,6 +16,9 @@ CHIP PC {
     OUT out[16];
 
     PARTS:
+	// we will increase the registry content anyhow, and if all falgs
+	// are set right (all of them 0) it will be channelled into
+    // into the input port of the registry. 	
     Inc16(in = RegOut, out = IncOut);
 	
 	// Three cascasing Mux16 gates have the effect of passing the if-else statements from
